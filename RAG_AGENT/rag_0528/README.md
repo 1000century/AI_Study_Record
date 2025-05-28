@@ -6,7 +6,7 @@
 ## 주요 기능
 
 📂 `HTML 문서 자동 로딩`: html_files 폴더 내 모든 HTML 문서 자동 로드
-```
+```python
 for idx,file_name in enumerate(os.listdir(folder_path)):
     file_path = os.path.join(folder_path, file_name)
 
@@ -22,7 +22,7 @@ for idx,file_name in enumerate(os.listdir(folder_path)):
 ```
 
 🧠 `OpenAI 임베딩`: text-embedding-3-small 모델로 문서 임베딩 수행
-```
+```python
 embedding = OpenAIEmbeddings(model="text-embedding-3-small", openai_api_key=api_key)
 vectorstore = Chroma(
     collection_name="medical",
@@ -35,7 +35,7 @@ for i in range(0, len(documents), 100):
 ```
 
 🔎 `유사도 기반 검색`: 입력된 키워드와 가장 유사한 문서 5개 반환
-```
+```python
 retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
 results = retriever.invoke(query)
 ```
