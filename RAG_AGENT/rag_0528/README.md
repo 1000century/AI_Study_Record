@@ -69,7 +69,7 @@ Bartonella henselae (고양이) 등 : 그람음성 막대균
             
                 
 
-                    → 원본 HTML 보기 (html_file_8. 감염_6. 그람 음성균_13. 묘소병(고양이할큄병, 바르토넬라 감염)_321.html)
+                    → 원본 HTML 보기
                 
             
         
@@ -109,7 +109,7 @@ Bartonella henselae (고양이) 등 : 그람음성 막대균
             
                 
 
-                    → 원본 HTML 보기 (html_file_8. 감염_10. 바이러스_12. 광견병(공수병)_336.html)
+                    → 원본 HTML 보기
                 
             
         
@@ -147,7 +147,7 @@ Tuberculin test
             
                 
 
-                    → 원본 HTML 보기 (html_file_66. 비뇨의학_1. 비뇨기 감염_3. 요로생식기결핵_1218.html)
+                    → 원본 HTML 보기
                 
             
         
@@ -173,7 +173,7 @@ Tuberculin test
             
                 
 
-                    → 원본 HTML 보기 (html_file_8. 감염_10. 바이러스_4. 거대세포 바이러스_344.html)
+                    → 원본 HTML 보기
                 
             
         
@@ -195,7 +195,7 @@ Tuberculin test
             
                 
 
-                    → 원본 HTML 보기 (html_file_8. 감염_9. 리케차, 미코플라즈마, 클라미디아_2. 큐열 (Q열)_329.html)
+                    → 원본 HTML 보기
                 
             
         
