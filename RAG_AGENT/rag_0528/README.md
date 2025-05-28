@@ -5,7 +5,7 @@
 
 ## 주요 기능
 
-📂 `HTML 문서 자동 로딩`: html_files 폴더 내 모든 HTML 문서 자동 로드
+📂 `HTML 문서 로딩`: html_files 폴더 내 모든 HTML 문서 로드
 ```python
 for idx,file_name in enumerate(os.listdir(folder_path)):
     file_path = os.path.join(folder_path, file_name)
