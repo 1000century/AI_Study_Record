@@ -2,6 +2,7 @@
 
 이 Flask 웹 애플리케이션에서 로컬 HTML 파일을 불러와 OpenAI 임베딩을 통해 문서 벡터화하고, 유사도 기반 검색 기능을 구현합니다.
 
+
 ## 주요 기능
 
 📂 HTML 문서 자동 로딩: html_files 폴더 내 모든 HTML 문서 자동 로드
@@ -197,5 +198,5 @@ Tuberculin test
 
                     → 원본 HTML 보기
                 
-            
-        
+## 특이사항
+모바일 환경의 Termux에서 Ubuntu를 설치하여 구현하였습니다. 
