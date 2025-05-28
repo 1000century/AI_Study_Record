@@ -8,8 +8,23 @@
 📂 `HTML 문서 자동 로딩`: html_files 폴더 내 모든 HTML 문서 자동 로드
 
 🧠 `OpenAI 임베딩`: text-embedding-3-small 모델로 문서 임베딩 수행
+```
+embedding = OpenAIEmbeddings(model="text-embedding-3-small", openai_api_key=api_key)
+vectorstore = Chroma(
+    collection_name="medical",
+    embedding_function=embedding,
+    persist_directory="chroma_db"
+)
+for i in range(0, len(documents), 100):
+    vectorstore.add_documents(documents[i:i + 100])
+    logger.info(f"문서 {i + 1}~{min(i + 100, len(documents))} 저장 완료")
+```
 
 🔎 `유사도 기반 검색`: 입력된 키워드와 가장 유사한 문서 5개 반환
+```
+retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+results = retriever.invoke(query)
+```
 
 📜 `문서 상세 보기`: 문서 제목 및 내용 렌더링
 
