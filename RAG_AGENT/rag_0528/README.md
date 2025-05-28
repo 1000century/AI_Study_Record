@@ -6,6 +6,20 @@
 ## 주요 기능
 
 📂 `HTML 문서 자동 로딩`: html_files 폴더 내 모든 HTML 문서 자동 로드
+```
+for idx,file_name in enumerate(os.listdir(folder_path)):
+    file_path = os.path.join(folder_path, file_name)
+
+    loader = UnstructuredHTMLLoader(file_path)
+    data = loader.load()
+
+    chap = data[0].page_content.split('\n')[0].split('##')[0]
+    remove_first_line = '\n'.join(data[0].page_content.split('\n')[1:])
+    final_content = f"단원명: {chap}\n\n{remove_first_line}"
+
+    docs.append({"filename": file_name, "content": final_content})
+    documents.append(Document(page_content=final_content, metadata={"filename": file_name}))
+```
 
 🧠 `OpenAI 임베딩`: text-embedding-3-small 모델로 문서 임베딩 수행
 ```
