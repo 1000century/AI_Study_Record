@@ -1,0 +1,50 @@
+## 개선안
+```python
+import dotenv
+dotenv.load_dotenv()
+
+base_path = os.getenv("BASE_PATH", ".")
+folder_path = os.path.join(base_path,"html_files")
+
+for idx, file_name in enumerate(os.listdir(folder_path)):
+    if file_name.endswith(".html"):
+        file_path = os.path.join(folder_path, file_name)
+        loader = UnstructuredHTMLLoader(file_path)
+        documents = loader.load()
+        if len(file_name.split('_')) != 6:
+            print(file_name,)
+        _,_, bc, bt, st, _ = file_name.split('_')
+        
+        
+        for doc in documents:
+            remove_first_line = '\n'.join(doc.page_content.split('\n')[1:])
+            final_content = f"과목명: {bc}\n"
+            final_content += f"주제: {bt}\n"
+            final_content += f"소주제: {st}\n\n"
+            final_content += remove_first_line
+            doc.page_content = final_content
+            doc.metadata['file_name'] = file_name
+            doc.metadata['chapter'] = bc
+            doc.metadata['big_title'] = bt
+            doc.metadata['small_title'] = st
+        
+        if idx == 0:
+            all_documents = documents
+        else:
+            all_documents.extend(documents)```
+
+## 결과
+
+|query|검색된 문서들|
+|---|---|
+|심부전으로 입원한 환자에게 처음 시행해야 할 처치는?|응급의학_2. 외상 환자의 응급처치_1. 응급처치<br>외과_5. 수술 전 처치_9. 수술 전후 심부정맥혈전 예방 (perioperative VTE prophylaxis)<br>부인과_19. 자궁 경부암_2. 자궁 경부암 (Cervical cancer)<br>외과_9. 심폐소생술_2. 성인 전문소생술 (ACLS) - 심정지 1 - 심정지 인지 및 기본 소생술(BLS)<br>외과_5. 수술 전 처치_7. 수술 전 계통별 평가 5- 내분비계 평가<br>|
+|수술 후 발생 가능한 DVT 예방 방법은?|순환기_19. 말초혈관질환_7. 심부정맥혈전증 (DVT)<br>외과_5. 수술 전 처치_9. 수술 전후 심부정맥혈전 예방 (perioperative VTE prophylaxis)<br>순환기_19. 말초혈관질환_4. 급성 동맥 폐색<br>외과_5. 수술 전 처치_3. 수술 전 계통별 평가 1- 심혈관계 평가<br>외과_5. 수술 전 처치_8. 수술 전 계통별 평가 6- 혈액학적 평가<br>|
+|분만 중 자궁수축 억제제 사용 기준은?|순환기_21. 실신_3. 기립성 저혈압<br>산과_23. 임신 중 고혈압 질환_6. 전자간증 치료<br>순환기_17. 고혈압_3. 고혈압 치료<br>외과_3. 수혈_4. 동결침전제제 (Cryoprecipitate) <br>신장_12. 그외 질환들_1. 부종<br>|
+|조기진통 시 자궁 억제약 처방 기준?|부인과_16. 자궁 체부 양성 질환_2. 자궁샘근육증<br>산과_5. 분만 관리 1- 정상 분만_2. 정상 분만의 요소 2- Power - 자궁의 수축력 요소 (분만진통)<br>산과_23. 임신 중 고혈압 질환_2. 임신 중 사용하는 항고혈압 약제<br>산과_21. 조기 산후 출혈_2. 자궁이완증(자궁근육무력증, uterine atony)<br>산과_14. 조산_3. 조기산통 (Preterm Labor, PTL)<br>|
+|열성 경련 1차 대응은?|정신과_17. 신경발달장애_6. 운동장애<br>정신과_18. 성격장애_3. Cluster B<br>전공의 외과_9. 외과적 합병증_2. 문합부 누출<br>부인과_23. 난소 양성 질환_5. 경계성 난소종양 (Borderline ovarian tumor)<br>정형외과_8. 외상 및 골절_2. 급성 구획 증후군<br>|
+|뇌전증 환자의 약 조절 기준은?|외과_9. 심폐소생술_11. 신생아 소생술 (Neonatal resuscitation)<br>전공의 내과_5. 암성 통증의 조절_1. 암성 통증 및 마약성 진통제<br>순환기_11. 심부전_2. 만성 심부전<br>외과_5. 수술 전 처치_7. 수술 전 계통별 평가 5- 내분비계 평가<br>순환기_11. 심부전_4. 우심부전<br>|
+|전자간증 기준 혈압 수치는?|순환기_17. 고혈압_1. 혈압 측정<br>순환기_17. 고혈압_2. 고혈압 환자의 평가<br>순환기_17. 고혈압_5. 고혈압성 응급<br>순환기_17. 고혈압_4. 2차성 고혈압<br>산과_23. 임신 중 고혈압 질환_5. 전자간증 개요<br>|
+|심부전으로 입원한 환자의 초기 평가 항목은?|순환기_11. 심부전_1. 심부전 개요<br>응급의학_2. 외상 환자의 응급처치_1. 응급처치<br>외과_10. 외상_14. 전문 외상 처치술 (ATLS)<br>외과_5. 수술 전 처치_2. 수술 전 위험도 평가<br>순환기_11. 심부전_4. 우심부전<br>|
+|고관절 골절 수술 전 체크리스트는?|소아과 각론_33. 골격계 질환_4. 일과성 고관절 활막염 <br>전공의 외과_10. 임상해부학_2. 골반 수술 시 합병증<br>전공의 외과_6. 중심정맥관_2. 중심정맥관 감염<br>외과_5. 수술 전 처치_9. 수술 전후 심부정맥혈전 예방 (perioperative VTE prophylaxis)<br>외과_5. 수술 전 처치_5. 수술 전 계통별 평가 3- 신장 평가<br>|
+|당뇨병성 케톤산증 치료 단계별 접근 방법은?|감염_8. 스피로헤타병_2. 렙토스피라증<br>소아과 각론_27. 내분비 질환_6. 당뇨병 케톤산증(DKA)<br>내분비_6. 당뇨병_2. 당뇨병 케톤산증(DKA), 고혈당 고삼투압상태 (HHS)<br>소아과 각론_33. 골격계 질환_3. 레그-칼베-페르테스병 <br>외과_13. 뱀물림과 동물물림_1. 뱀 물림<br>|
+|소아 고열 진단 순서는?|소아과 총론_13. 선천 기형_7. 입술갈림증(구순열), 구개열<br>소아과 총론_1. 소아의 진찰_3. 그외 진찰 소견<br>외과_8. 외과적 합병증 _1. 수술 후 발열<br>외과_9. 심폐소생술_7. 소아 전문소생술 (PALS) - 심정지<br>소아과 각론_14. 감염병_9. 성홍열 (A군 연쇄상구균감염)<br>|

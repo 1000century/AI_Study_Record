@@ -1,1 +1,7 @@
 .env
+
+chroma/
+.chroma/
+*.db
+*.sqlite
+*.sqlite3
