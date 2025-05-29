@@ -6,5 +6,6 @@ chroma/
 *.sqlite
 *.sqlite3
 **/chroma_db/
+**/chroma_db copy/
 chroma.db
 .chroma.sqlite
