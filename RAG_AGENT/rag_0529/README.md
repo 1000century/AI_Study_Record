@@ -31,7 +31,8 @@ for idx, file_name in enumerate(os.listdir(folder_path)):
         if idx == 0:
             all_documents = documents
         else:
-            all_documents.extend(documents)```
+            all_documents.extend(documents)
+```
 
 ## 결과
 
