@@ -1,4 +1,4 @@
-# HTML 문서 RAG 구현
+# HTML 문서 Retriever 구현
 
 로컬 HTML 파일을 불러와 OpenAI 임베딩을 통해 문서 벡터화하고, 유사도 기반 검색 기능을 구현하는 Flask기반 어플리케이션
 
