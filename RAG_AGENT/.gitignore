@@ -5,3 +5,6 @@ chroma/
 *.db
 *.sqlite
 *.sqlite3
+**/chroma_db/
+chroma.db
+.chroma.sqlite
