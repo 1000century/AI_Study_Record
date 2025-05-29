@@ -68,8 +68,6 @@ LangChain / OpenAI / Chroma
 
 HTML 문서 파싱: UnstructuredHTMLLoader
 
-
-
 ---
 
 ## 결과
