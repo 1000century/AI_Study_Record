@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>질문 기록</title>
+</head>
+<body>
+    <h1>📜 질문 히스토리</h1>
+    {% for log in logs %}
+    <hr>
+    <h3>{{ log.timestamp }}</h3>
+    <p><b>질문:</b> {{ log.query }}</p>
+    <details>
+        <summary>Context 보기</summary>
+        <div style="white-space: pre-wrap;">{{ log.context | safe }}</div>
+    </details>
+    <p><b>답변:</b> {{ log.answer }}</p>
+    {% endfor %}
+    <br><a href="/">← 돌아가기</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>질문 결과</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 2rem;
+        }
+        a {
+            color: blue;
+        }
+        .context-block {
+            white-space: pre-wrap;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 질문:</h1>
+    <p>{{ query }}</p>
+    <h2>💬 LLM의 답변</h2>
+    <p>{{ answer }}</p>
+
+    <h2>📚 관련 문서 (클릭해서 펼치기)</h2>
+    <details>
+        <summary>Context 보기</summary>
+        <div class="context-block">
+            {{ context | safe }}
+        </div>
+    </details>
+
+
+    <br><br>
+    <a href="/">← 돌아가기</a>
+</body>
+</html>
