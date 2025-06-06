@@ -37,6 +37,8 @@ retriever = vectorstore.as_retriever(
     search_type="similarity",
     search_kwargs={"k": 10}
 )
+```
+```python
 # 검색 실행
 docs = retriever.invoke(query)
 
@@ -51,7 +53,9 @@ llm = ChatGoogleGenerativeAI(
 for source in sources:
     content = get_target_source(source, max_length=2000)
     contents.append(content)
+
 context = "\n".join([f"{'#'*10}\n{i+1}. {content}" for i, content in enumerate(contents)])
+
 prompt = f"""
 You are an expert in the field of computer science. Based on the following context, please answer the question:
 
@@ -62,10 +66,7 @@ Question: {query}
 
 Answer:
 """
-   print(prompt)
-
 response = llm.invoke(prompt).content.strip()
-
 ```
 
 ## 🔎 사용한 질의
