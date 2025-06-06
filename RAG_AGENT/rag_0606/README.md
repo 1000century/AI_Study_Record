@@ -37,8 +37,35 @@ retriever = vectorstore.as_retriever(
     search_type="similarity",
     search_kwargs={"k": 10}
 )
-# 검색 실행행
+# 검색 실행
 docs = retriever.invoke(query)
+
+# 생성 모델 결과
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.0-flash",
+    temperature=0,
+    max_tokens=None,
+    timeout=None,
+    api_key=GEMINI_API_KEY,
+)
+for source in sources:
+    content = get_target_source(source, max_length=2000)
+    contents.append(content)
+context = "\n".join([f"{'#'*10}\n{i+1}. {content}" for i, content in enumerate(contents)])
+prompt = f"""
+You are an expert in the field of computer science. Based on the following context, please answer the question:
+
+Context:
+{context}
+
+Question: {query}
+
+Answer:
+"""
+   print(prompt)
+
+response = llm.invoke(prompt).content.strip()
+
 ```
 
 ## 🔎 사용한 질의
