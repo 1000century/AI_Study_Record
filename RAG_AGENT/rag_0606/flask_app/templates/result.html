@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>질문 결과</title>
     <style>
@@ -16,13 +17,15 @@
             margin-bottom: 1rem;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <h1>🔍 질문:</h1>
     <p>{{ query }}</p>
     <h2>💬 LLM의 답변</h2>
-    <p>{{ answer }}</p>
-
+    <pre id="llm-answer-raw" style="display:none;">{{ answer }}</pre>
+    <div id="llm-answer-rendered"></div>
+    
     <h2>📚 관련 문서 (클릭해서 펼치기)</h2>
     <details>
         <summary>Context 보기</summary>
@@ -34,5 +37,10 @@
 
     <br><br>
     <a href="/">← 돌아가기</a>
+    <script>
+        const raw = document.getElementById('llm-answer-raw').textContent;
+        document.getElementById('llm-answer-rendered').innerHTML = marked.parse(raw);
+    </script>
+
 </body>
 </html>
