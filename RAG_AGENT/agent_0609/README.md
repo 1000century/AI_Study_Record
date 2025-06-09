@@ -79,4 +79,3 @@ streamlit run streamlit_app.py
 - GPT Tool Calling 구조 실습
 - OCR + 자연어 명령 + 자동화 PDF 처리
 - 상태 기반 인터랙티브 앱 (Streamlit + session_state)
-- 실제 서비스 수준까지 확장 가능한 구조
