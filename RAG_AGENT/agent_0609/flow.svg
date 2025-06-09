@@ -1,0 +1,214 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="userGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="gptGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="toolGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="pdfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow Effects -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Arrow Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+    </marker>
+  </defs>
+  
+  <rect width="1000" height="700" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    GPT Agent PDF 목차 생성 작동 방식
+  </text>
+  
+  <!-- Step 1: User Input -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="180" height="80" rx="15" fill="url(#userGradient)" filter="url(#glow)"/>
+    <text x="90" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+      👤 사용자 입력
+    </text>
+    <text x="90" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">
+      "5페이지에 서론 추가해줘"
+    </text>
+    <text x="90" y="65" text-anchor="middle" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="10">
+      자연어 명령
+    </text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <line x1="230" y1="140" x2="280" y2="140" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: GPT Analysis -->
+  <g transform="translate(280, 80)">
+    <rect x="0" y="0" width="200" height="120" rx="15" fill="url(#gptGradient)" filter="url(#glow)"/>
+    <text x="100" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+      🧠 GPT-4o Agent
+    </text>
+    <text x="100" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">
+      자연어 분석 및 파싱
+    </text>
+    
+    <!-- JSON Box -->
+    <rect x="15" y="55" width="170" height="50" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)"/>
+    <text x="100" y="70" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="10">
+      {
+    </text>
+    <text x="100" y="82" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="10">
+      "title": "서론", "page": 5
+    </text>
+    <text x="100" y="94" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="10">
+      }
+    </text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <line x1="480" y1="140" x2="530" y2="140" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Tool Calling -->
+  <g transform="translate(530, 100)">
+    <rect x="0" y="0" width="180" height="80" rx="15" fill="url(#toolGradient)" filter="url(#glow)"/>
+    <text x="90" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+      🔧 Tool Calling
+    </text>
+    <text x="90" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11">
+      add_toc_entry() 함수 호출
+    </text>
+    <text x="90" y="65" text-anchor="middle" fill="#fed7aa" font-family="Arial, sans-serif" font-size="10">
+      자동 실행
+    </text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <line x1="710" y1="140" x2="760" y2="140" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: PDF Processing -->
+  <g transform="translate(760, 100)">
+    <rect x="0" y="0" width="180" height="80" rx="15" fill="url(#pdfGradient)" filter="url(#glow)"/>
+    <text x="90" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+      📄 PDF 수정
+    </text>
+    <text x="90" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">
+      목차 추가 완료
+    </text>
+    <text x="90" y="65" text-anchor="middle" fill="#fecaca" font-family="Arial, sans-serif" font-size="10">
+      PyMuPDF 처리
+    </text>
+  </g>
+  
+  <!-- Detailed Flow Section -->
+  <text x="500" y="250" text-anchor="middle" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    상세 작동 흐름
+  </text>
+  
+  <!-- Detailed Steps -->
+  <g transform="translate(50, 280)">
+    <!-- Step A -->
+    <circle cx="20" cy="20" r="15" fill="#3b82f6" stroke="#60a5fa" stroke-width="2"/>
+    <text x="20" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">1</text>
+    <text x="50" y="15" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="bold">사용자 명령 입력</text>
+    <text x="50" y="32" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">자연어로 목차 추가 요청</text>
+    
+    <!-- Step B -->
+    <circle cx="20" cy="80" r="15" fill="#10b981" stroke="#34d399" stroke-width="2"/>
+    <text x="20" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">2</text>
+    <text x="50" y="75" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="bold">GPT 명령 분석</text>
+    <text x="50" y="92" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">페이지 번호, 제목, 레벨 추출</text>
+    
+    <!-- Step C -->
+    <circle cx="20" cy="140" r="15" fill="#f59e0b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="20" y="145" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">3</text>
+    <text x="50" y="135" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Tool 함수 호출</text>
+    <text x="50" y="152" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">add_toc_entry() 자동 실행</text>
+    
+    <!-- Step D -->
+    <circle cx="20" cy="200" r="15" fill="#ef4444" stroke="#f87171" stroke-width="2"/>
+    <text x="20" y="205" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">4</text>
+    <text x="50" y="195" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="bold">PDF 구조 수정</text>
+    <text x="50" y="212" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">목차 데이터 추가 및 저장</text>
+  </g>
+  
+  <!-- Right side - Code Example -->
+  <g transform="translate(500, 280)">
+    <rect x="0" y="0" width="450" height="260" rx="10" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(51, 65, 85, 0.5)"/>
+    <text x="20" y="25" fill="#f59e0b" font-family="Arial, sans-serif" font-size="14" font-weight="bold">📋 실제 GPT Tool Definition</text>
+    
+    <text x="20" y="50" fill="#94a3b8" font-family="monospace" font-size="11">tools = [{</text>
+    <text x="30" y="67" fill="#94a3b8" font-family="monospace" font-size="11">"type": "function",</text>
+    <text x="30" y="84" fill="#94a3b8" font-family="monospace" font-size="11">"name": "add_toc_entry",</text>
+    <text x="30" y="101" fill="#94a3b8" font-family="monospace" font-size="11">"description": "PDF에 목차 항목을 추가합니다",</text>
+    <text x="30" y="118" fill="#94a3b8" font-family="monospace" font-size="11">"parameters": {</text>
+    <text x="50" y="135" fill="#94a3b8" font-family="monospace" font-size="11">"properties": {</text>
+    <text x="60" y="152" fill="#10b981" font-family="monospace" font-size="11">"doc_id": {"type": "string"},</text>
+    <text x="60" y="169" fill="#10b981" font-family="monospace" font-size="11">"level": {"type": "integer"},</text>
+    <text x="60" y="186" fill="#10b981" font-family="monospace" font-size="11">"title": {"type": "string"},</text>
+    <text x="60" y="203" fill="#10b981" font-family="monospace" font-size="11">"page": {"type": "integer"}</text>
+    <text x="50" y="220" fill="#94a3b8" font-family="monospace" font-size="11">}</text>
+    <text x="40" y="237" fill="#94a3b8" font-family="monospace" font-size="11">}</text>
+    <text x="20" y="254" fill="#94a3b8" font-family="monospace" font-size="11">}]</text>
+  </g>
+  
+  <!-- Key Benefits -->
+  <g transform="translate(50, 550)">
+    <text x="0" y="0" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="16" font-weight="bold">🎯 핵심 장점</text>
+    
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="220" height="60" rx="8" fill="rgba(59, 130, 246, 0.1)" stroke="rgba(59, 130, 246, 0.3)"/>
+      <text x="15" y="20" fill="#3b82f6" font-family="Arial, sans-serif" font-size="12" font-weight="bold">✨ 자연어 인터페이스</text>
+      <text x="15" y="35" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">코딩 없이 명령어로 제어</text>
+      <text x="15" y="48" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">사용자 친화적 UX</text>
+    </g>
+    
+    <g transform="translate(240, 30)">
+      <rect x="0" y="0" width="220" height="60" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="rgba(16, 185, 129, 0.3)"/>
+      <text x="15" y="20" fill="#10b981" font-family="Arial, sans-serif" font-size="12" font-weight="bold">🤖 지능형 파싱</text>
+      <text x="15" y="35" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">GPT가 의도 파악 및 변환</text>
+      <text x="15" y="48" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">오류 처리 및 검증</text>
+    </g>
+    
+    <g transform="translate(480, 30)">
+      <rect x="0" y="0" width="220" height="60" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="rgba(245, 158, 11, 0.3)"/>
+      <text x="15" y="20" fill="#f59e0b" font-family="Arial, sans-serif" font-size="12" font-weight="bold">🔧 확장 가능성</text>
+      <text x="15" y="35" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">새로운 Tool 함수 추가</text>
+      <text x="15" y="48" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">다양한 PDF 작업 지원</text>
+    </g>
+    
+    <g transform="translate(720, 30)">
+      <rect x="0" y="0" width="220" height="60" rx="8" fill="rgba(239, 68, 68, 0.1)" stroke="rgba(239, 68, 68, 0.3)"/>
+      <text x="15" y="20" fill="#ef4444" font-family="Arial, sans-serif" font-size="12" font-weight="bold">⚡ 실시간 처리</text>
+      <text x="15" y="35" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">즉시 PDF 수정 반영</text>
+      <text x="15" y="48" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">피드백 루프 완성</text>
+    </g>
+  </g>
+  
+  <!-- Footer -->
+  <text x="500" y="680" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="12">
+    GPT Agent + Tool Calling = 자연어 → 자동화된 PDF 처리
+  </text>
+</svg>
