@@ -308,22 +308,13 @@
       경피성 신발증: ACEi → 투석 고려   (6) 빠르게 진행시 조혈모세포이식, 폐이식 고려'
     source: 1661_3905_전신경화증.html
     total_chunks: 8
-- query: 발열의 병태생리 과정을 설명하시오
+- query: 발열의 병태생리 설명하시오
   results:
   - chunk_index: 0
     excerpt: '제목: 당뇨의 개요와 병태생리  당뇨의 분류와 병태 생리에 대해 다룬 파트이다. 직접 출제되지는 않으나 이후 내용의 이해에
       도움이 되는 내용으로, 세세한 내용을 모두 암기할 필요는 없다.'
     source: 1654_3883_당뇨의 개요와 병태생리.html
     total_chunks: 4
-  - chunk_index: 3
-    excerpt: '제목: 화상  3. 화상의 병태생리   1) 중증 화상의 정의   (1) > 20% TBSA(total body surface
-      area) (성인) / > 40% TBSA (소아)   (2) 주요 외상 동반   (3) 흡입, 화학, 고압 전기 화상     2) 병태생리   (1)
-      Hypermetabolism   ① 카테콜아민, 코티솔, 글루카곤, 도파민 분비↑   ② 이화작용(glycolysis, proteolysis,
-      lipolysis) 촉진   (2) 염증과 부종:  Capillary permeability↑, edema   (3) 심혈관계 변화: 혈장량↓,
-      말초 혈관 저항↑, 심근수축력↓, 심박출량↓   (4) 신장혈류↓: 혈장량↓, 안지오텐신, 알도스테론, 바소프레신 등   (5) 소화기관:
-      점막 위축, 흡수 장애, intestinal permeability↑   (6) 면역 억제'
-    source: 1867_4342_화상.html
-    total_chunks: 6
   - chunk_index: 1
     excerpt: '제목: 뱀물림과 동물물림  1. 병태생리   1) 단백질 가수분해 효소 성분: 국소 조직 괴사, 혈액응고장애, 장기부전   2)
       출혈독: 혈관 누출 → 체액 이동, 출혈   3) 심근억제인자: Cardiac output ↓   4) Bradykinin: 혈관확장   5)
@@ -336,23 +327,15 @@
       흔히 발생'
     source: 1778_4161_말로리-바이스 증후군.html
     total_chunks: 6
-  - chunk_index: 1
-    excerpt: '제목: 심화 1. 식도암의 병기와 치료  1. 병기 설정         T stage     Tis   Mucosa의 basement
-      membrane 이하에 국한된 high-grade dysplasia       T1   Submucosa까지 침범       T1a   Mucosa의
-      lamina propria 또는 muscularis mucosa 침범       T1b   Submucosa 침범       T2   Proper
-      muscle 침범       T3   Adventitia 침범       T4   주변 구조물 침범       T4a   Pleura,
-      pericardium, azygos v., diaphragm, peritoneum 침범       T4b   기타 구조물 침범 (ex.
-      aorta, vertebral body, airway 등)     N stage     N0   LN 전이 없음       N1   LN
-      전이 1~2개       N2   LN 전이 3~6개       N3   LN 전이 ≥ 7개     M stage     M0   원격
-      전이 없음       M1   원격 전이         Squamous cell carcinoma clinical staging       N0   N1   N2   N3       T1a   I   I   III   IV
-      A       T1b   I   I       T2   II   II       T3   II   III       T4a   IV A       T4b   IV
-      A       M1   IV B         Adenocarcinoma clinical staging       N0   N1   N2   N3       T1a   I   II
-      A   IV A   IV A       T1b   I   II A       T2   II B   III       T3   III     T4a     T4b   IV
-      A       M1   IV B         내시경적 치료 or 수술   수술   (Neoadj. CCRT + 수술) or 단독 CCRT   Systemic
-      CTx + palliative Tx     * 즉, squamous cell carcinoma와 adenocarcinoma의 clinical
-      staging은 다소 다르지만, TNM 각각에 따른 치료 방침은 대동소이하다.'
-    source: 1778_5473_심화 1. 식도암의 병기와 치료.html
-    total_chunks: 4
+  - chunk_index: 3
+    excerpt: '제목: 화상  3. 화상의 병태생리   1) 중증 화상의 정의   (1) > 20% TBSA(total body surface
+      area) (성인) / > 40% TBSA (소아)   (2) 주요 외상 동반   (3) 흡입, 화학, 고압 전기 화상     2) 병태생리   (1)
+      Hypermetabolism   ① 카테콜아민, 코티솔, 글루카곤, 도파민 분비↑   ② 이화작용(glycolysis, proteolysis,
+      lipolysis) 촉진   (2) 염증과 부종:  Capillary permeability↑, edema   (3) 심혈관계 변화: 혈장량↓,
+      말초 혈관 저항↑, 심근수축력↓, 심박출량↓   (4) 신장혈류↓: 혈장량↓, 안지오텐신, 알도스테론, 바소프레신 등   (5) 소화기관:
+      점막 위축, 흡수 장애, intestinal permeability↑   (6) 면역 억제'
+    source: 1867_4342_화상.html
+    total_chunks: 6
   - chunk_index: 1
     excerpt: '제목: 종양용해증후군  1. 개요   1) 병태생리   (1)  CTx  /  RTx  이후 종양 세포가 사멸 →  세포
       내 물질들이 혈액으로 유리됨   ① Hyperuricemia:  세포 내 nucleic acid가 uric acid로 변환됨   ② Hyperkalemia:  K
@@ -363,6 +346,49 @@
       인해  심정지  가능성 → 내과적 응급상황     2) 역학:  백혈병 ,  림프종  환자들이 많음  (CTx에 반응성이 크기 때문)'
     source: 1910_4458_종양용해증후군.html
     total_chunks: 4
+  - chunk_index: 2
+    excerpt: '제목: 마르판 증후군  2. 병태생리   •  Fibrillin-1이라는 세포외 기질 단백질의 유전적 결함으로 발생     -  Fibrillin은
+      미세섬유(microfibrill)의 주요 구성 요소이며, 탄성섬유(elastic fiber)의 scaffold 역할     • 주요 병리
+      기전:    1. 미세섬유 기반 결합조직의 구조적 지지 악화    2. 미세섬유는 TGF- β를 격리하는데 이러한 가능의 저하는  TGF-
+      β 신호의 전달 과잉 활성화를 유도 → 염증, 혈관 평활근의 비정상적 성장, 기질 분해효소 증가를 유도'
+    source: 2752_5760_마르판 증후군.html
+    total_chunks: 4
+  - chunk_index: 3
+    excerpt: '제목: 당뇨의 개요와 병태생리  3. 병태생리   1) 개요   (1) 유전적, 환경적 요인이 복합적으로 작용하여 발생함   (2)
+      원인에 따라 insulin 분비 감소, insulin 저항성, glucose utilization 감소, glucose 생성 증가 등이
+      복합적으로 작용하여 고혈당 발생     2) T1DM:  자가면역에 의해 췌장 베타 세포 파괴  → 인슐린 분비 저하   (1) Autoantibody:
+      췌장 β cell 파괴 → 인슐린 분비능 저하   •   GADA (glutamic acid decarboxylase autoAb): -
+      80%   •  Islet cell autoantibody ,   anti-insulin autoAb ,  Zinc transporter
+      autoAb 등   (2) 환경적 요인   (3) 유전적 요인: T2DM에 비해 적게 작용 (일란성쌍둥이 일치율 30~50%)   (4)
+      자연 경과: 위 세 요인이 종합적으로 작용   •   유전적 소인 + 환경요인에 의한 trigger → immune activation,
+      autoAb 형성 → 췌장 β cell 파괴 → T1DM 발생   * β cell이 파괴되어 인슐린을 외부에서 공급해줘야 한다.     3)
+      T2DM:  인슐린 저항성 , 인슐린 분비 저하 등이 복합적으로 작용   (1) 원인: 사람마다 매우 heterogeneous함   ①
+      유전적 요인: T1DM보다 유전적 요소  더 강함   ② 환경적 요인: T2DM에 중요한 요소로 작용   (2) 인슐린 저항성 → 인슐린
+      작용 감소   ① 간 gluconeogenesis 억제 X →  공복 혈당 증가   ② 근육 glucose uptake↓ →  식후 혈당
+      증가   ③ 지방조직 lipolysis 억제 X → 혈중 FFA 증가   (3) 자연 경과   • 인슐린 저항성 →  β cell의 보상적
+      인슐린 분비 ↑ → β cell 과부하 & 이상 발생 →  인슐린 분비 ↓ → T2DM 발생   * 남아있는 β cell에 걸린 과부하를
+      줄여 조금이라도 더 오래 기능하도록 하기 위해 경구혈당강하제 투여하며, 과부하가 지속되어 β cell의 파괴가 진행되면 그 때 인슐린을
+      투여한다.       Harrison 21e, pp.3094-3102   이미지:  C-peptide'
+    source: 1654_3883_당뇨의 개요와 병태생리.html
+    total_chunks: 4
+  - chunk_index: 1
+    excerpt: '제목: 당뇨의 개요와 병태생리  1. 개요   1) 당뇨병(diabetes mellitus, DM):  절대적/상대적 인슐린
+      분비 저하로 인해  고혈당 이 나타나는 대사 장애 증후군     2) 인슐린(insulin):  Peptide 호르몬 → 따라서 경구 섭취가
+      불가능   (1) 생성 및 분비   ① 생성 장소: 췌장 islet of Langerhans의 β cell   ② 분비 형태: Proinsulin
+      → proenzyme에 의해 분리 →  insulin + C-peptide   •  C-peptide 는 체내에서 분비되는  내인성 insulin
+      양 을 의미       ③ 분비 패턴: 24시간 분비 = 기초분비량 50% + 식후분비량 50%       (2) 작용:  주로  에너지를 저장
+      하는 작용을 하는 anabolic hormone   ① 지방: Lipolysis 억제   ② 간: Glycogenesis 촉진, gluconeogenesis,
+      glycogenolysis 억제   ③ 근육: 포도당 uptake 촉진'
+    source: 1654_3883_당뇨의 개요와 병태생리.html
+    total_chunks: 4
+  - chunk_index: 1
+    excerpt: '제목: 항인지질 증후군  1. 개요   1) 정의:   반복적인 혈전증  혹은  반복적인 태아 손실 이 특징적인  자가항체
+      -매개 후천성 응고항진증(acquired thrombophilia)     2) 원인   (1) 일차성: Idiopathic   (2)
+      이차성: 기타 자가면역질환( 전신홍반루푸스  등)     3) 병태생리   (1) 세포막에 존재하는 phospholipid에 대한 자가항체
+      생성 (감염, 수술, 외상 등의 유발요인)   (2) 자가항체가 endothelium의 phospholipid를 공격할 경우 coagulation
+      cascade가 활성화됨 → 혈전 생성'
+    source: 1660_3913_항인지질 증후군.html
+    total_chunks: 5
   - chunk_index: 4
     excerpt: '제목: 다태임신  4. 쌍생아간 수혈 증후군 (twin-to-twin transfusion syndrome, TTTS)   1)
       정의:  Monochorionic twin간  혈관 anastomosis 가 발생해 한 태아에서 다른 태아로 수혈되는 현상     2)
@@ -378,30 +404,114 @@
       다른 점   ② 치료: Radiofrequency ablation         Williams 26e, pp.838-864   이미지:  링크'
     source: 1740_4032_다태임신.html
     total_chunks: 5
-  - chunk_index: 7
-    excerpt: '제목: 유방암  7. 병기(staging)   * 자세한 병기는 국시 문제를 푸는데 알지 않아도 큰 상관이 없다. 아래는
-      clinical staging 기준으로, 필요한 사람만 참고하면 된다 .     1) T stage     T1   크기 ≤ 2cm       T2   2cm
-      < 크기 ≤ 5cm       T3   크기 > 5cm       T4   흉벽 or 피부 침범 / 염증성 유방암           2)
-      N stage     N0   LN 전이 없음       N1   동측 level I, II axillary LN 전이 + 촉진시 움직임       N2     동측
-      level I, II axillary LN 전이 + 촉진시 고정됨   동측 internal mammary LN 전이         N3     동측
-      level I, II axillary LN 전이 + 동측 internal mammary LN 전이   동측 infraclavicular
-      LN 전이   동측 supraclavicular LN 전이             3) M stage     M0   원격 전이 없음       M1   원격
-      전이 있음             분류   N0   N1   N2   N3       T1   I   IIA   IIIA   IIIC       T2   IIA   IIB   IIIA       T3   IIB   IIIA   IIIA       T4   IIIB       M1   IV                 Sabiston
-      21e, pp.827-853   NCCN guideline, 2024-1'
-    source: 1844_4316_유방암.html
-    total_chunks: 8
-  - chunk_index: 2
-    excerpt: '제목: 자궁외 임신  2. 병태생리   비정상 위치에 착상 →  β-hCG 분비 시작 →  그러나  정상 임신만큼 β-hCG가
-      상승하지 않음  → 계속 자라다가 유산 또는  난관 파열 (tubal rupture) 발생'
-    source: 1743_4049_자궁외 임신.html
-    total_chunks: 6
+- query: Fever의 병태생리를 설명하시오.
+  results:
+  - chunk_index: 1
+    excerpt: '제목: 발열, 불명열  1. 발열(fever)   1) 체온 (body temperature)   (1)   정상 구강체온:
+      36.8 ± 0.4℃  (6AM 기준)   ① 직장체온 = 구강체온 + 0.4℃   ② 6AM에 최저, 4PM에 최고   ③ 여성의 배란기는
+      배란 2주 전보다 0.6℃ 높음   (2)   체온 조절   ① 원리: Hypothalamus의 thermoregulatory center
+      에서 지정한  set point 에 체온을 맞춤   ② 체온 낮추는 작용: 땀, vasodilation   ③ 체온 높이는 작용: Shivering,
+      vasoconstriction     2) 발열 (fever)   (1) 정의:  Normal daily variation 이상으로 체온이
+      올라가는 현상   ① 임상적으로 구강 체온이  6AM에 ≥ 37.3℃ ,  4PM에 ≥ 37.8℃   ② Hyperpyrexia: > 41.5℃의
+      고열   (2) 원인   ①  감염 (m/c)   ② 염증성 질환 /  자가면역 질환   ③ 종양성 질환   ④ 기타: 외상, 용혈 등   (3)
+      병태생리   ① 다양한 pyrogen에 의해 pyrogenic cytokine 분비   ② Hypothalamus가 자극되어  PGE 2
+       증가  →   thermoregulatory set point 상승   ③ 높아진 set point에 몸이 체온을 스스로 맞춤   (4)
+      고체온(hyperthermia)와의 차이   ① 원리: Thermoregulatory set point는 정상,  외부의 열에 의해 체온이
+      상승   ② 치료: 해열제의 효과 없음 /  physical cooling (냉각 IV fluid) 필요     3) 해열제 (antipyretics)
+      :  대부분  COX(cyclooxygenase) inhibitor 로 PGE2의 생성 억제   (1)  Acetaminophen :  안전성
+      우월, 간독성   (2) NSAID, aspirin:  COX inhibitor, 신독성, 위궤양, 위출혈 risk   (3) Glucocorticoid:
+       Phospholipase A2 억제, pyrocytokine 억제     4) 특징적인 발열 양상:  몇몇 질환의 특징적인 fever
+      pattern   (1)   Relative bradycardia :  체온에 비해 심박수가 느림   •  Typhoid fever(장티푸스)
+      , Brucella, Leptospira, drug-induced fever 등   (2) 48시간 주기: 3일열   •  Plasmodium
+      vivax  (우리나라 호발 말라리아)   (3) 72시간 주기: 4일열   • Plasmodium malariae (해외 호발 말라리아)   (4)
+      재귀열(relapsing fever): 며칠씩 발열이 있는 기간과 없는 기간이 반복됨   • Borrelia   (5) Pel-Ebstein
+      pattern:  3~10일 정도 열이 나고 나지 않는 기간이 반복   •  림프종'
+    source: 1636_3826_발열, 불명열.html
+    total_chunks: 3
   - chunk_index: 0
-    excerpt: '제목: 종양용해증후군  : Tumor lysis syndrome, TLS       항암치료를 받은 후 종양 세포가 사멸하며
-      세포 내부의 물질들이 혈액 내로 대량 쏟아져 들어오는 질환이다. 임상양상이 비특이적이라고 볼 수 있으나 항암화학요법이라는 명확한 과거력이
-      주어지기 때문에 다소 쉽게 추정진단을 잡을 수 있다. 치료뿐만 아니라 병태생리에 대해서도 출제된 적이 있으므로 꼼꼼히 알아두도록 하자.
-      참고로 신장 파트의  횡문근융해증(rhabdomyolysis) 과 몇몇 임상양상 및 lab 소견이 비슷하므로 같이 공부하기를 권한다.'
-    source: 1910_4458_종양용해증후군.html
+    excerpt: '제목: 중증열성혈소판감소증후군  : Severe fever with thrombocytopenia syndrome, SFTS       국시와
+      임종평에 진단을 묻는 문제로 자주 출제되었다.  가을철 열성질환 3가지 (쯔쯔가무시 병, 신증후군 출혈열, 렙토스피라증)가 함께 보기로
+      빈출하므로 감별진단이 중요하다. 진드기에 물렸지만 가피는 형성되지 않는다는 점, 백혈구와 혈소판이 감소한 lab 소견이 특징적이므로 잘
+      기억하자.'
+    source: 1643_3846_중증열성혈소판감소증후군.html
+    total_chunks: 5
+  - chunk_index: 1
+    excerpt: '제목: 신생아 질환 - 기타  1. 신생아 과체온(hyperthermia in the newborn)   : 탈수열(dehydration
+      fever), 신생아 일과성 발열(transitory fever of the newborn)이라고도 부른다.   * 정의상 발열(fever)은
+      체온 조절점(thermoregulatory set point)이 변화해 체온이 상승하는 것이고, 과체온(hyperthermia)은 외부환경에
+      의해 체온이 상승하는 것이다(감염 파트 ‘ 발열, 불명열 ’ 참고). 교과서 본문에서는 두 용어가 동의어처럼 혼용되어 있다.     1)
+      개요   (1) 생후 2~3일된 건강한 신생아에서 38~39℃의 체온상승   (2) 심한 경우 경련, 의식저하로 이어질 수 있으므로 주의   (3)   원인   ①
+      모유 수유 중  수분 섭취 부족 :  조기모유황달 이 동반될 수 있음   ② 높은 외부환경 온도:  옷을 여러 겹 입음 ,  보육기/방열기의
+      과열, 더운 날씨     2) 임상양상:  감염에 의한 발열과의 감별이 필요       신생아 과체온   감염에 의한 발열     체온
+      상승, 체중감소, 소변량/소변횟수 감소   숫구멍(fontanelle) 함몰, 드물게 빈맥/빈호흡     손발이 따뜻 ,  분홍빛  (혈관확장)   손발이
+      차가움, 창백       활발하게 움직이며  물을 마시려 함   처져 보이고 아파보임       직장체온 ≤ 피부체온   직장체온 > 피부체온       복부
+      피부온도 - 손 피부온도 < 2 o C   복부 피부온도 - 손 피부온도 > 3 o C       * 원칙적으로는 다른 발열의 원인을(감염,
+      산모의 발열 등) 배제한 다음에 신생아 과체온을 진단해야 한다.     3) 치료   (1) 외부 환경 온도를 낮추기:  옷/이불 벗기기
+      , 미지근한 물에 담그기   (2) 수분 보충: PO or IV'
+    source: 1775_4110_신생아 질환 - 기타.html
     total_chunks: 4
+  - chunk_index: 2
+    excerpt: '제목: 발열, 불명열  2. 불명열(fever of unknown origin, FUO)   1) 정의   (1) ≥  
+      38.3℃ 열이 두 번  이상 관찰됨   (2) 3주 이상 지속됨   (3) 확인된 면역저하 상태 없음   (4)   충분한 병력청취,
+      신체진찰, 검사 (CRP/ESR, CBC, chemistry, 배양, CXR, US, TST, IGRA 등)에도 불구하고  원인이 불확실
+      한 경우     2) 진단     (1) 자세한 문진/진찰, 항생제/steroid 중단, 기본 검사 시행   (2) 기본 검사에서 원인이
+      밝혀지지 않은 경우  반드시 의료진이 직접 환자의 체온을 측정하여  체온계 조작 가능성 ,  factitious fever를 배제   (3)
+      PDC(potentially diagnostic clue)가 존재하면 그에 따른 검사 진행   (4) PDC가 존재하지 않는 경우 한랭글로불린,
+      검안경검사 →  FDG-PET/CT  → History, P/Ex 반복 →  chest & abdominal CT , temporal artery
+      biopsy 순서로 검사 진행하여 PDC 찾기   (5) 끝내 PDC가 찾아지지 않았다면  empirical treatment (항결핵제,
+      steroid, doxycycline 등) 시행 후 반응 관찰   *  FDG-PET/CT 는 암, 염증성 질환(혈관염 등)을 쉽게 확인할
+      수 있기 때문에 FUO에서의 효용이 높다.         Harrison 21e, pp.130-133, 145-152'
+    source: 1636_3826_발열, 불명열.html
+    total_chunks: 3
+  - chunk_index: 3
+    excerpt: '제목: SFTS virus  3. 임상 증상   1) 초기: 고열(≥38℃), 오한, 피로, 근육통, 식욕부진, 오심, 설사
+      등   2) 중기:  혈소판 감소 , 백혈구 감소, 간수치 상승, LDH 증가, 의식 저하, 혼수, 경련 가능   3) 후기: (중증 시):  다장기부전
+      , DIC, 쇼크, 사망 위험'
+    source: 2525_5699_SFTS virus.html
+    total_chunks: 4
+  - chunk_index: 1
+    excerpt: '제목: Neutropenic fever  1. 개요   1) 정의   (1) ANC (absolute neutrophil
+      count, 절대 호중구 수)  =  총 백혈구 수  ×  호중구 분율(%)   (2) 호중구감소증 (neutropenia)   ① ANC
+      < 1000/mm 3 : 감염질환의 위험 급격히 증가   ② ANC < 500/mm 3 : Normal flora에 대한 control
+      감소   (3) 호중구감소증 발열 (febrile neutropenia)   ①  ANC  <  1500/mm 3 이 있는 상태에서  1회의
+      경구 체온이 38.3도 이상 으로 증가되거나 또는  1시간 이상 동안 38도 이상의 체온 증가 가 발생한 경우   ② 감염이 있을 가능성
+      이 매우 큼 → 즉시 경험적 항생제 시작   * Harrison 21판에서 febrile neutropenia는 ANC < 1500/mm
+      3 이 있으면서 발열이 있는 경우로 정의하며, 2010 IDSA guideline에서 cancer-related febrile neutropenia는
+      ANC < 500/mm 3  or ANC < 1000/mm 3 이면서 < 500/mm 3 로 이행될 가능성이 높은 경우로 정의한다.     2)
+      다음의 경우 감염의 위험성/심각도 증가   (1) Neutropenia의 긴 duration   (2) 호중구의 빠른 감소 속도   (3)
+      호중구의 낮은 절대적 수치     3) 원인균   (1) G(+):  S. aureus, S. epidermidis, Streptococcus
+      viridans   (2) G(-):  E. coli, Klebsiella,  Pseudomonas aeruginosa   (3) 진균:  Candida,
+      Aspergillus, Mucormycosis   (4) 바이러스, 기생충'
+    source: 1638_3853_Neutropenic fever.html
+    total_chunks: 3
+  - chunk_index: 1
+    excerpt: '제목: SFTS virus  1. 특징   :  중증혈소판감소증후군 (Severe fever with thrombocytopenia
+      syndrome, SFTS)  을 일으킨다.'
+    source: 2525_5699_SFTS virus.html
+    total_chunks: 4
+  - chunk_index: 2
+    excerpt: '제목: Legionella pneumophila  3. 증상   : 크게 2가지로 나뉜다.       1) Legionnaires’
+      disease: 재향군인회병         항목   설명       특징   중증 폐렴 + 전신 증상       발병 대상   고령자,
+      면역저하자, 흡연자, 만성폐질환자 등       증상   고열, 기침, 호흡곤란, 근육통, 설사, 의식저하       발병 및 치사율   발병률
+      low, 치사율 high         2) Pontiac fever: 냉방병       항목   설명       특징   경증 독감 유사
+      질환, 폐렴 없음       발병 대상   집단 감염       증상   발열, 근육통, 두통 – 수일 후 자연 회복       발병 및
+      치사율   발병률 high, 치사율 low'
+    source: 2521_5659_Legionella pneumophila.html
+    total_chunks: 3
+  - chunk_index: 0
+    excerpt: '제목: Neutropenic fever  최근 직접적으로 문제가 출제되지는 않았다. 호중구감소증 및 호중구감소증 발열의 정의와
+      경험적 항생제 치료에 대해 알아두자.'
+    source: 1638_3853_Neutropenic fever.html
+    total_chunks: 3
+  - chunk_index: 2
+    excerpt: '제목: 라임병, 재귀열  2. 재귀열(relapsing fever)   1) 원인균:   Borrelia spp.   (1)
+      분포: 우리나라에 없음 / 아프리카, 중앙아시아, 북미 등 열대지방의 풍토병   (2) 감염 경로: 쥐, 다람쥐, 이, 벼룩, 진드기 등
+      다양한 동물에 의해 매개     2) 임상양상   (1) 갑작스러운 발열 (39~43℃)   • Febrile episode가 한 번에  1~3일  지속,
+      4~ 14일 정도의 간격으로  반복됨   (2) 비특이적 증상: 두통, 관절통, 근육통, 오심/구토, 복통, 국소 신경학적 증상     3)
+      진단: PCR, 배양(blood, CSF), serologic assay 가능     4) 치료:  Doxycycline , erythromycin,  penicillin
+      G           Harrison 21e, pp.1425-1431'
+    source: 1641_3856_라임병, 재귀열.html
+    total_chunks: 3
 - query: 심부전으로 입원한 환자의 초기 평가 항목은?
   results:
   - chunk_index: 2
