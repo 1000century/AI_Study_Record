@@ -1,5 +1,7 @@
-# LLM Query Results
+# Flutter Application
+[플러터 앱](flutter_app)
 
+# LLM Query Results
 
 ## 🧪 Query: **뎅기열과 비슷한 매개체로 인한 감염병은?**
 
