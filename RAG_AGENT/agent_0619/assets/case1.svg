@@ -37,10 +37,15 @@
   <text x="450" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">신증후군 수준</text>
   
   <!-- Results -->
-  <rect x="50" y="150" width="460" height="120" rx="10" fill="#e8f5e8" stroke="#4caf50"/>
+  <rect x="50" y="150" width="460" height="140" rx="10" fill="#e8f5e8" stroke="#4caf50"/>
   <text x="60" y="170" font-family="Arial" font-size="12" font-weight="bold" fill="#2e7d32">실행 결과:</text>
   <text x="60" y="190" font-family="Arial" font-size="10" fill="#333">✓ 신증후군 진단 기준 충족 (단백뇨 > 3.5g/day, 부종)</text>
   <text x="60" y="205" font-family="Arial" font-size="10" fill="#333">✓ 원인 미상 - 신장생검 필요</text>
   <text x="60" y="220" font-family="Arial" font-size="10" fill="#333">✓ 추가 정밀검사 권고</text>
-  <text x="60" y="245" font-family="Arial" font-size="10" font-weight="bold" fill="#d32f2f">호출된 함수: check_nephrotic_syndrome_criteria → suggest_nephrotic_syndrome_cause → summarize_nephrotic_syndrome_case</text>
+  <text x="60" y="245" font-family="Arial" font-size="10" font-weight="bold" fill="#d32f2f">
+    호출된 함수:
+    <tspan x="60" dy="14">check_nephrotic_syndrome_criteria</tspan>
+    <tspan x="60" dy="14">→ suggest_nephrotic_syndrome_cause</tspan>
+    <tspan x="60" dy="14">→ summarize_nephrotic_syndrome_case</tspan>
+  </text>
 </svg>

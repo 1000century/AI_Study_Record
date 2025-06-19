@@ -58,23 +58,6 @@ LangChain을 사용하여 구현한 의학 진단 및 치료 추천 에이전트
 2. `suggest_nephrotic_syndrome_cause` → "소아 신증후군으로 미세변화병(MCD) 가능성이 높습니다"
 3. `recommend_nephrotic_syndrome_treatment` → "Steroid가 1차 치료입니다"
 
-## 🔄 Agent 워크플로우
-
-```mermaid
-graph TD
-    A[환자 케이스 입력] --> B{나이 확인}
-    B -->|소아| C[MCD 우선 고려]
-    B -->|성인| D[다양한 원인 검토]
-    
-    C --> E[Steroid 치료 권고]
-    D --> F{추가 정보 필요}
-    F -->|충분한 정보| G[원인별 치료 권고]
-    F -->|불충분한 정보| H[신장생검 권고]
-    
-    E --> I[치료 모니터링]
-    G --> I
-    H --> J[추가 검사 후 재평가]
-```
 
 ## 🎯 주요 특징
 
