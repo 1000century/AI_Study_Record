@@ -26,19 +26,19 @@ LangChain을 사용하여 구현한 의학 진단 및 치료 추천 에이전트
 | `recommend_nephrotic_syndrome_treatment` | 진단별 치료 방법 추천 | `diagnosis` (MCD, FSGS, MGN, DMN, Amyloidosis) | 질환별 구체적 치료 방침 |
 | `summarize_nephrotic_syndrome_case` | 환자 케이스 종합 요약 | `age`, `sex`, `proteinuria_g_day`, `albumin_g_dl`, `edema`, `hematuria` | 환자 상태 종합 요약 |
 
-### 📋 진단 기준 및 감별 질환
 
-**신증후군 진단 기준:**
-- 단백뇨 > 3.5 g/day
-- 저알부민혈증 < 2.5 g/dL
-- 부종 존재
+## 🚀 사용 방법
 
-**주요 감별 질환:**
-- **MCD (미세변화병)**: 소아에서 가장 흔함, Steroid 반응성 좋음
-- **FSGS (국소분절성 사구체경화증)**: Steroid 저항성, 예후 불량
-- **MGN (막신장병)**: PLA2R 양성 시 일차성, 성인 남성에서 흔함
-- **DMN (당뇨병성 신장병증)**: 당뇨병 병력, 혈뇨 없음
-- **Amyloidosis**: AL형(혈액암), AA형(만성염증)
+```python
+# Agent 초기화
+agent = create_tool_calling_agent(llm=llm, tools=all_tools, prompt=prompt)
+agent_executor = AgentExecutor(agent=agent, tools=all_tools, verbose=True)
+
+# 케이스 실행
+result = agent_executor.invoke({"input": "환자 케이스 설명..."})
+print(result['output'])
+```
+
 
 ## 📊 실행 결과 분석
 
@@ -69,25 +69,6 @@ LangChain을 사용하여 구현한 의학 진단 및 치료 추천 에이전트
 2. `suggest_nephrotic_syndrome_cause` → "소아 신증후군으로 미세변화병(MCD) 가능성이 높습니다"
 3. `recommend_nephrotic_syndrome_treatment` → "Steroid가 1차 치료입니다"
 
-
-## 🎯 주요 특징
-
-- **구조화된 입력**: Pydantic 모델을 사용한 타입 안전성 보장
-- **의료 가이드라인 기반**: 실제 신증후군 진단 및 치료 기준 반영
-- **연령별 접근**: 소아와 성인의 다른 접근 방식 적용
-- **단계별 의사결정**: 체계적인 진단 프로세스
-
-## 🚀 사용 방법
-
-```python
-# Agent 초기화
-agent = create_tool_calling_agent(llm=llm, tools=all_tools, prompt=prompt)
-agent_executor = AgentExecutor(agent=agent, tools=all_tools, verbose=True)
-
-# 케이스 실행
-result = agent_executor.invoke({"input": "환자 케이스 설명..."})
-print(result['output'])
-```
 
 ## 📈 실행 결과 상세 분석
 
