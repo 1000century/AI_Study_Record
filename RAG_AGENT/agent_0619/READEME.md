@@ -43,53 +43,7 @@ LangChain을 사용하여 구현한 의학 진단 및 치료 추천 에이전트
 ## 📊 실행 결과 분석
 
 ### Case 1: 21세 남성 환자
-
-<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
-     refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
-    </marker>
-  </defs>
-  
-  <!-- 배경 -->
-  <rect width="600" height="300" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
-  
-  <!-- 제목 -->
-  <text x="300" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Case 1: 21세 남성 - Agent 실행 플로우</text>
-  
-  <!-- Step 1 -->
-  <rect x="50" y="50" width="120" height="60" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
-  <text x="110" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#1976d2">1. Criteria Check</text>
-  <text x="110" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">proteinuria: 10.2g</text>
-  <text x="110" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">albumin: 2.7g/dL</text>
-  
-  <!-- Arrow 1 -->
-  <line x1="170" y1="80" x2="210" y2="80" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-  
-  <!-- Step 2 -->
-  <rect x="220" y="50" width="120" height="60" rx="10" fill="#fff3e0" stroke="#f57c00"/>
-  <text x="280" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">2. Cause Analysis</text>
-  <text x="280" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">age: 21, no diabetes</text>
-  <text x="280" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">no hematuria</text>
-  
-  <!-- Arrow 2 -->
-  <line x1="340" y1="80" x2="380" y2="80" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-  
-  <!-- Step 3 -->
-  <rect x="390" y="50" width="120" height="60" rx="10" fill="#f3e5f5" stroke="#7b1fa2"/>
-  <text x="450" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#7b1fa2">3. Case Summary</text>
-  <text x="450" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">21세 남성</text>
-  <text x="450" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">신증후군 수준</text>
-  
-  <!-- Results -->
-  <rect x="50" y="150" width="460" height="120" rx="10" fill="#e8f5e8" stroke="#4caf50"/>
-  <text x="60" y="170" font-family="Arial" font-size="12" font-weight="bold" fill="#2e7d32">실행 결과:</text>
-  <text x="60" y="190" font-family="Arial" font-size="10" fill="#333">✓ 신증후군 진단 기준 충족 (단백뇨 > 3.5g/day, 부종)</text>
-  <text x="60" y="205" font-family="Arial" font-size="10" fill="#333">✓ 원인 미상 - 신장생검 필요</text>
-  <text x="60" y="220" font-family="Arial" font-size="10" fill="#333">✓ 추가 정밀검사 권고</text>
-  <text x="60" y="245" font-family="Arial" font-size="10" font-weight="bold" fill="#d32f2f">호출된 함수: check_nephrotic_syndrome_criteria → suggest_nephrotic_syndrome_cause → summarize_nephrotic_syndrome_case</text>
-</svg>
+![사례 1](assets/case1.svg)
 
 **실행된 함수 순서:**
 1. `check_nephrotic_syndrome_criteria` → "신증후군 의심됩니다"
@@ -97,53 +51,7 @@ LangChain을 사용하여 구현한 의학 진단 및 치료 추천 에이전트
 3. `summarize_nephrotic_syndrome_case` → "21세 남성 환자, 신증후군 수준의 단백뇨"
 
 ### Case 2: 4세 남아 환자
-
-<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <marker id="arrowhead2" markerWidth="10" markerHeight="7" 
-     refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
-    </marker>
-  </defs>
-  
-  <!-- 배경 -->
-  <rect width="600" height="300" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
-  
-  <!-- 제목 -->
-  <text x="300" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Case 2: 4세 남아 - Agent 실행 플로우</text>
-  
-  <!-- Step 1 -->
-  <rect x="30" y="50" width="100" height="60" rx="10" fill="#fff3e0" stroke="#ff9800"/>
-  <text x="80" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#ff9800">1. Case Summary</text>
-  <text x="80" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">4세 남아</text>
-  <text x="80" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">부종, 저알부민</text>
-  
-  <!-- Arrow 1 -->
-  <line x1="130" y1="80" x2="160" y2="80" stroke="#333" stroke-width="2" marker-end="url(#arrowhead2)"/>
-  
-  <!-- Step 2 -->
-  <rect x="170" y="50" width="100" height="60" rx="10" fill="#e8eaf6" stroke="#3f51b5"/>
-  <text x="220" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#3f51b5">2. Cause Analysis</text>
-  <text x="220" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">age < 12</text>
-  <text x="220" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">→ MCD 의심</text>
-  
-  <!-- Arrow 2 -->
-  <line x1="270" y1="80" x2="300" y2="80" stroke="#333" stroke-width="2" marker-end="url(#arrowhead2)"/>
-  
-  <!-- Step 3 -->
-  <rect x="310" y="50" width="100" height="60" rx="10" fill="#e0f2f1" stroke="#009688"/>
-  <text x="360" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#009688">3. Treatment</text>
-  <text x="360" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">MCD 진단</text>
-  <text x="360" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">→ Steroid 치료</text>
-  
-  <!-- Results -->
-  <rect x="50" y="150" width="460" height="120" rx="10" fill="#e8f5e8" stroke="#4caf50"/>
-  <text x="60" y="170" font-family="Arial" font-size="12" font-weight="bold" fill="#2e7d32">실행 결과:</text>
-  <text x="60" y="190" font-family="Arial" font-size="10" fill="#333">✓ 소아 신증후군 → 미세변화병(MCD) 가능성 높음</text>
-  <text x="60" y="205" font-family="Arial" font-size="10" fill="#333">✓ 1차 치료: Steroid</text>
-  <text x="60" y="220" font-family="Arial" font-size="10" fill="#333">✓ 반응 없을 시: 생검 후 면역억제제 고려</text>
-  <text x="60" y="245" font-family="Arial" font-size="10" font-weight="bold" fill="#d32f2f">호출된 함수: summarize_nephrotic_syndrome_case → suggest_nephrotic_syndrome_cause → recommend_nephrotic_syndrome_treatment</text>
-</svg>
+![사례2](assets/case2.svg)
 
 **실행된 함수 순서:**
 1. `summarize_nephrotic_syndrome_case` → "4세 남성 환자, 저알부민혈증, 부종 동반"

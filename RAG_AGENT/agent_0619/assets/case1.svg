@@ -1,0 +1,46 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="600" height="300" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- 제목 -->
+  <text x="300" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Case 1: 21세 남성 - Agent 실행 플로우</text>
+  
+  <!-- Step 1 -->
+  <rect x="50" y="50" width="120" height="60" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
+  <text x="110" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#1976d2">1. Criteria Check</text>
+  <text x="110" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">proteinuria: 10.2g</text>
+  <text x="110" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">albumin: 2.7g/dL</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="170" y1="80" x2="210" y2="80" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2 -->
+  <rect x="220" y="50" width="120" height="60" rx="10" fill="#fff3e0" stroke="#f57c00"/>
+  <text x="280" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#f57c00">2. Cause Analysis</text>
+  <text x="280" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">age: 21, no diabetes</text>
+  <text x="280" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">no hematuria</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="340" y1="80" x2="380" y2="80" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3 -->
+  <rect x="390" y="50" width="120" height="60" rx="10" fill="#f3e5f5" stroke="#7b1fa2"/>
+  <text x="450" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#7b1fa2">3. Case Summary</text>
+  <text x="450" y="90" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">21세 남성</text>
+  <text x="450" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">신증후군 수준</text>
+  
+  <!-- Results -->
+  <rect x="50" y="150" width="460" height="120" rx="10" fill="#e8f5e8" stroke="#4caf50"/>
+  <text x="60" y="170" font-family="Arial" font-size="12" font-weight="bold" fill="#2e7d32">실행 결과:</text>
+  <text x="60" y="190" font-family="Arial" font-size="10" fill="#333">✓ 신증후군 진단 기준 충족 (단백뇨 > 3.5g/day, 부종)</text>
+  <text x="60" y="205" font-family="Arial" font-size="10" fill="#333">✓ 원인 미상 - 신장생검 필요</text>
+  <text x="60" y="220" font-family="Arial" font-size="10" fill="#333">✓ 추가 정밀검사 권고</text>
+  <text x="60" y="245" font-family="Arial" font-size="10" font-weight="bold" fill="#d32f2f">호출된 함수: check_nephrotic_syndrome_criteria → suggest_nephrotic_syndrome_cause → summarize_nephrotic_syndrome_case</text>
+</svg>
