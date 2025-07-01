@@ -1,9 +1,6 @@
 
 from dotenv import load_dotenv
-load_dotenv()
-EXCEL_FILES_PATH=r"C:\Users\Sese"
-import os
-os.environ["EXCEL_FILES_PATH"] = EXCEL_FILES_PATH
+
 import asyncio
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
