@@ -2,3 +2,4 @@ private/
 .gitignore
 **/__pycache__
 **/.env
+MCP/0701/markmap-*.html

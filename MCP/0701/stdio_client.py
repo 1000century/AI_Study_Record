@@ -1,6 +1,5 @@
-
 from dotenv import load_dotenv
-
+# load_dotenv()
 import asyncio
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
@@ -253,6 +252,7 @@ async def run_agent(command: str, args: List[str], prompt: str, env: dict):
 if __name__ == "__main__":
     import sys
     import json
+    
 
     if "--env" not in sys.argv:
         print("Usage: python stdio_mcp_client.py <command> <arg1> <arg2> ... <prompt> --env '<json>'")
@@ -269,11 +269,11 @@ if __name__ == "__main__":
     command = sys.argv[1]
     prompt = sys.argv[env_index - 1]
     args = sys.argv[2:env_index - 1]
-
+    
     print('\n\n🔵 명령어:', command)
-    print('🔵 프롬프트:', prompt)
-    print('🔵 환경 변수:', env)
-    print('🔵 인자 목록:', args)
+    print('🔵 프롬프트(500자만):', prompt[:500])
+    print('🔵 MCP의 환경 변수:', env)
+    print('🔵 MCP의 인자 목록:', args)
 
     result = asyncio.run(run_agent(command, args, prompt, env))
     print("\n\n🔵 결과:")
