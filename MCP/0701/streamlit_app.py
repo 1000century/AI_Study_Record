@@ -9,9 +9,9 @@ from langchain_core.messages import BaseMessage
 from langchain_core.runnables import RunnableConfig
 from langgraph.graph.state import CompiledStateGraph
 import uuid
-os.environ['OPENAI_API_KEY'] = "sk-proj..."
 
-os.environ['GOOGLE_API_KEY'] = "AIz.."
+# os.environ['OPENAI_API_KEY'] = "sk-proj..."
+# os.environ['GOOGLE_API_KEY'] = "AIz.."
 
 
 def random_uuid():
