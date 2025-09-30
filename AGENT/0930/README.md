@@ -1,3 +1,7 @@
+## googleadk.py 개요
+- google.adk 라이브러리를 써서 agent 구현
+
+
 ## 호름
 ```
 GenerativeWorkflow (SequentialAgent)
