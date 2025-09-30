@@ -1,3 +1,4 @@
+## 호름
 ```
 GenerativeWorkflow (SequentialAgent)
 │
@@ -19,7 +20,35 @@ GenerativeWorkflow (SequentialAgent)
         └─ critic_decision != "승인" → 다음 단계로 진행 (escalate=False)
 ```
 
+## 코드
+```python
+generative_flow = SequentialAgent(
+    name="GenerativeWorkflow",
+    sub_agents=[
+        story_writer,
+        # LlmAgent의 출력을 세션 상태에 저장하여 다음 에이전트가 사용할 수 있도록 합니다.
+        LlmAgent(
+            name="SaveCriticInput",
+            model="gemini-2.0-flash-exp",
+            output_key="critic_input",  # story_writer의 출력을 critic_input 키로 저장
+            instruction="""다음 에이전트가 사용할 수 있도록 이전 단계의 출력을 저장합니다."""
+        ),
+        story_critic,
+        # story_critic의 출력을 critic_decision 키로 저장
+        LlmAgent(
+            name="SaveCriticDecision",
+            model="gemini-2.0-flash-exp",
+            output_key="critic_decision",
+            instruction="""다음 에이전트가 사용할 수 있도록 이전 단계의 출력을 저장합니다."""
+        ),
+        ConditionalRouter(name="Router")
+    ]
+)
+```
 
+
+
+## 결과
 ```
 ==================================================
 에이전트: StoryWriter
