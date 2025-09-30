@@ -45,7 +45,8 @@ generative_flow = SequentialAgent(
     ]
 )
 ```
-
+- `SaveCriticInput` 과 `SaveCriticDecision`은 다음 단계로 전달하기 위해 저장하는 용도이다.
+- 이때, LlmAgent에 `critic_input`이라는 인자를 받는다
 
 
 ## 결과
