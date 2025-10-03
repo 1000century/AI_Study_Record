@@ -1,4 +1,4 @@
-# test 폴더
+# 1. test 폴더
 
 - google adk web으로 실행해보기 
 
@@ -8,7 +8,7 @@ adk web
 
 
 
-# agent_study.py
+# 2. agent_study.py
 
 ## 📋 목차
 1. [환경 설정](#환경-설정)
