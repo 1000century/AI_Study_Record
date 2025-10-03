@@ -22,8 +22,8 @@ adk web
 ## 환경 설정
 
 ### 프로젝트 정보
-- **경로**: `C:\Users\Sese\AI_Study_Record\AGENT\1002\test`
-- **실행**: `python agent.py`
+- **경로**: `C:\Users\Sese\AI_Study_Record\AGENT\1002`
+- **실행**: `python agent_study.py`
 - **가상환경**: `venv` 활성화
 
 ### 주요 의존성
