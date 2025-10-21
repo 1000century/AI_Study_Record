@@ -52,13 +52,6 @@ LangGraph를 사용한 간단한 카운터 에이전트 예제
 
 *실선(*): 일반 엣지 | 점선(.): 조건부 엣지*
 
-### 플로우 요약
-
-```
-Start → Increment → [count < 5?]
-                        ├─ Yes → Double → End
-                        └─ No → End
-```
 
 ## State
 
