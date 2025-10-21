@@ -79,13 +79,17 @@ graph = workflow.compile()
 # 그래프 시각화 및 저장
 if __name__ == "__main__":
     try:
-        # PNG 파일로 저장
-        png_data = graph.get_graph().draw_mermaid_png()
-        with open("graph_visualization.png", "wb") as f:
-            f.write(png_data)
-        with open("graph_visualization.mmd", "w") as f:
-            f.write(graph.get_graph().draw_mermaid())
-        print("그래프가 'graph_visualization.png'로 저장되었습니다.")
+        # ASCII 아트로 출력
+        ascii_graph = graph.get_graph().draw_ascii()
+        print("\n=== 그래프 구조 ===")
+        print(ascii_graph)
+
+        # 파일로도 저장
+        with open("graph_visualization.txt", "w", encoding="utf-8") as f:
+            f.write(ascii_graph)
+        print("\n그래프가 'graph_visualization.txt'로 저장되었습니다.")
+
     except Exception as e:
         print(f"시각화 중 오류 발생: {e}")
-        print("필요한 패키지를 설치하세요: pip install pygraphviz 또는 pip install grandalf")
+        import traceback
+        traceback.print_exc()
