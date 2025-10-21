@@ -1,6 +1,7 @@
-# LangGraph Counter Agent
+# LangGraph Agent Tutorial
 
-LangGraph를 사용한 간단한 카운터 에이전트 예제
+LangGraph를 사용한 간단한 에이전트 예제  
+LLM 요청 없이 구현  
 
 ## 파일 구조
 
