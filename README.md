@@ -1,7 +1,7 @@
 # AI Study Record
 
-AI 학습 과정을 기록한 저장소입니다.  
-**이미지 처리**, **NLP 파인튜닝**, **RAG/AGENT**별로 주제를 분류하였습니다.
+AI 학습 과정을 기록한 저장소입니다.
+**이미지 처리**, **NLP 파인튜닝**, **RAG**, **AGENT**별로 주제를 분류하였습니다.
 
 ---
 
@@ -36,3 +36,19 @@ AI 학습 과정을 기록한 저장소입니다.
 | 25.05.29     | [`rag_0529`](./RAG_AGENT/rag_0529) |           |      |
 | 25.06.06     | [`rag_0606`](./RAG_AGENT/rag_0606) |  Theory text RAG 파이프라인 구축  |      |
 | 25.06.08     | [`rag_0608`](./RAG_AGENT/rag_0608) |  Theory text RAG 실험   |      |
+
+---
+
+## 4. AGENT
+
+### [Agent 학습 기록](./AGENT)
+- **진행 날짜:** 2025.09.30~
+- **개요:** LangGraph와 Google ADK를 활용한 Agent 워크플로우 학습
+
+#### 날짜별 학습 기록
+
+| 날짜 | 폴더명 | 주제 | 기술 스택 |
+|------|--------|------|----------|
+| 25.09.30 | [`250930`](./AGENT/250930) | Google ADK | SequentialAgent, LlmAgent, ConditionalRouter |
+| 25.10.02 | [`251002`](./AGENT/251002) | Google ADK | LiteLlm, InMemorySessionService, Multi-turn 대화 |
+| 25.10.21 | [`251021`](./AGENT/251021) | LangGraph | StateGraph, 조건부 분기, LangGraph Studio |
